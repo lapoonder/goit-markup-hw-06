@@ -1068,22 +1068,27 @@ main {
   text-decoration: underline;
 }
 
-.modal-mobile-menu {
-  position: absolute;
+.modal-mobile-menu.is-open {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  background-color: #fcfcfc;
-  padding: 72px 16px 40px;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+  background-color: #fcfcfc;
+  padding: 72px 16px 40px;
 }
 
 .modal-mobile-menu .footer-social-network {
   gap: 40px;
+  justify-content: flex-start;
 }
 
 .mobile-menu {
