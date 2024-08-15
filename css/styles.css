@@ -265,8 +265,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-btn.is-active:hover .icon-mobile-menu,
-.mobile-menu-btn.is-active:focus .icon-mobile-menu {
+.mobile-menu-btn:hover .icon-mobile-menu,
+.mobile-menu-btn:focus .icon-mobile-menu {
   fill: #404bbf;
 }
 
