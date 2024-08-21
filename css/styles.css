@@ -1081,7 +1081,7 @@ body {
   text-decoration: underline;
 }
 
-.modal-mobile-menu.is-open {
+.modal-mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -1092,11 +1092,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  pointer-events: none;
   overflow-y: auto;
   background-color: #fcfcfc;
   padding: 72px 16px 40px;
+}
+
+.modal-mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal-mobile-menu .footer-social-network {
